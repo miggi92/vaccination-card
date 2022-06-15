@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "407536345444",
+    "project_id": "mgm12-vaccination-card",
+    "storage_bucket": "mgm12-vaccination-card.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407536345444:android:5ea72748a3595dc4f41a71",
+        "android_client_info": {
+          "package_name": "dev.mgm12.vaccinationcard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407536345444-ff6oqbfkh57p0bkbrks8631llgu0ttl1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.mgm12.vaccinationcard",
+            "certificate_hash": "b3760811f030b2f4da57fe374e837dd19d63a3d5"
+          }
+        },
+        {
+          "client_id": "407536345444-bh3ckic7jaic9os8644iqqbhs29f6qog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Dqt9eRY1-y4_VSTNWEjNL6JbPd5PXQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407536345444-bh3ckic7jaic9os8644iqqbhs29f6qog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
