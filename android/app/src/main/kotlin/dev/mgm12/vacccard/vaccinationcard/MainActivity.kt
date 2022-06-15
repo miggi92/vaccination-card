@@ -1,4 +1,4 @@
-package dev.mgm12.vacccard.vaccinationcard
+package dev.mgm12.vaccinationcard
 
 import io.flutter.embedding.android.FlutterActivity
 

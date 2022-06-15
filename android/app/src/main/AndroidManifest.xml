@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.mgm12.vacccard.vaccinationcard">
+    package="dev.mgm12.vaccinationcard">
    <application
         android:label="vaccinationcard"
         android:name="${applicationName}"
