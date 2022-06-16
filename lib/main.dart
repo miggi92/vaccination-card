@@ -36,10 +36,10 @@ class MyApp extends ConsumerWidget {
      return user.when(
       data: (user) {
         return MaterialApp(
-      title: 'Vaccination card',
-      theme: appTheme,
-      routes: appRoutes,
-    );
+          title: 'Vaccination card',
+          theme: appTheme,
+          routes: appRoutes,
+        );
       },
       error: (e, s) => Text('error'),
       loading: () => Text('loading'),

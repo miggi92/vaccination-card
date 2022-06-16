@@ -8,6 +8,7 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
    return Scaffold(
+     appBar: AppBar(title: Text('Main')),
       body: Center(
         child: ElevatedButton(
           child: const Text('about'),

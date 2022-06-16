@@ -1,3 +1,3 @@
-import 'home.dart';
+import 'screens/home.dart';
 
 var appRoutes = {'/': (context) => const HomeScreen()};
