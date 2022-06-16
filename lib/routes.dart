@@ -6,5 +6,5 @@ import 'screens/home.dart';
 var appRoutes = {
   '/': (context) => const HomeScreen(),
   '/login': (context) => const LoginScreen(),
-  '/profile': (context) => const ProfileScreen()
+  '/profile': (context) => ProfileScreen()
 };
