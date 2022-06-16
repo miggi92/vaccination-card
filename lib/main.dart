@@ -7,6 +7,7 @@ import 'firebase_options.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../services/auth.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,18 +23,14 @@ void main() async {
   runApp(const ProviderScope(child: MyApp()));
 }
 
-final userProvider = StreamProvider<User?>(
-  (ref) => FirebaseAuth.instance.authStateChanges(),
-);
-
 class MyApp extends ConsumerWidget {
   const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-     final user = ref.watch(userProvider);
-     return user.when(
+    final user = ref.watch(userProvider);
+    return user.when(
       data: (user) {
         return MaterialApp(
           title: 'Vaccination card',

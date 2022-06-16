@@ -22,6 +22,14 @@ class LoginScreen extends ConsumerWidget {
                 size: 150,
               ),
               Flexible(
+                child: LoginButton(
+                  icon: FontAwesomeIcons.userNinja,
+                  text: 'Continue as Guest',
+                  loginMethod: AuthService().anonLogin,
+                  color: Colors.deepPurple,
+                ),
+              ),
+              Flexible(
                   child: LoginButton(
                 text: 'Sign in with Google',
                 icon: FontAwesomeIcons.google,

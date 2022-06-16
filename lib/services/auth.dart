@@ -1,7 +1,24 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+final userProvider = StreamProvider<User?>(
+  (ref) => FirebaseAuth.instance.authStateChanges(),
+);
+
 class AuthService {
+  final userStream = FirebaseAuth.instance.authStateChanges();
+  final user = FirebaseAuth.instance.currentUser;
+
+  /// Anonymous Firebase login
+  Future<void> anonLogin() async {
+    try {
+      await FirebaseAuth.instance.signInAnonymously();
+    } on FirebaseAuthException catch (e) {
+      // handle error
+    }
+  }
+
   Future<void> googleLogin() async {
     try {
       final googleUser = await GoogleSignIn().signIn();
