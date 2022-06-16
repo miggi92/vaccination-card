@@ -6,8 +6,6 @@ import 'package:vaccinationcard/theme.dart';
 import 'firebase_options.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import '../services/auth.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,17 +27,12 @@ class MyApp extends ConsumerWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final user = ref.watch(userProvider);
-    return user.when(
-      data: (user) {
-        return MaterialApp(
-          title: 'Vaccination card',
-          theme: appTheme,
-          routes: appRoutes,
-        );
-      },
-      error: (e, s) => Text('error'),
-      loading: () => Text('loading'),
+    return MaterialApp(
+      title: 'Vaccination card',
+      darkTheme: appDarkTheme,
+      theme: appTheme,
+      themeMode: ThemeMode.system,
+      routes: appRoutes,
     );
   }
 }
