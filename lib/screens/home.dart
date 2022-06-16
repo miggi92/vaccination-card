@@ -7,12 +7,12 @@ class HomeScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-   return Scaffold(
-     appBar: AppBar(title: Text('Main')),
+    return Scaffold(
+      appBar: AppBar(title: Text('Main')),
       body: Center(
         child: ElevatedButton(
-          child: const Text('about'),
-          onPressed: () => Navigator.pushNamed(context, '/about'),
+          child: const Text('Login'),
+          onPressed: () => Navigator.pushNamed(context, '/login'),
         ),
       ),
     );
