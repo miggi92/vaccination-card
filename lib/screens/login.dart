@@ -42,7 +42,7 @@ class LoginScreen extends ConsumerWidget {
   }
 }
 
-class LoginButton extends StatelessWidget {
+class LoginButton extends ConsumerWidget {
   final Color color;
   final IconData icon;
   final String text;
@@ -57,7 +57,7 @@ class LoginButton extends StatelessWidget {
       : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Container(
       margin: const EdgeInsets.only(bottom: 10),
       child: ElevatedButton.icon(
