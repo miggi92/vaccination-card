@@ -32,7 +32,7 @@ dependencies:
 
   flutter_riverpod:
   # firebase
-  firebase_core:
+  firebase_core: ^1.19.1
 
   # Auth
   firebase_auth:
