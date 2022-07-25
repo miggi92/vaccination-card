@@ -35,7 +35,7 @@ dependencies:
   firebase_core:
 
   # Auth
-  firebase_auth:
+  firebase_auth: ^3.5.1
 
   # Analytics
   firebase_analytics:
