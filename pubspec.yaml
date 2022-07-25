@@ -38,7 +38,7 @@ dependencies:
   firebase_auth:
 
   # Analytics
-  firebase_analytics:
+  firebase_analytics: ^9.3.0
 
   # Crashlytics
   firebase_crashlytics:
